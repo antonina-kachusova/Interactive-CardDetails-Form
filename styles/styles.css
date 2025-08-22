@@ -1,0 +1,291 @@
+:root {
+  --depp-violet: #21092F;
+  --violet-blue: #6448FE;
+  --violet: #6D28D9;
+  --light-grey: #dfdee0;
+  --white: #ffffff;
+
+  --btn-color: #21092F;
+  --btn-hover-color: #360a56;
+  --btn-text-color: #FFFFFF;
+  --accent-color: hsl(249, 99%, 64%);
+  --error-color: hsl(0, 100%, 66%);
+  --gap: 26px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+label,
+button {
+  font-family: inherit;
+}
+
+body {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  height: 800px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-main-desktop {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* image */
+.bg-main-desktop-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.bg-main-mobile {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* image */
+.bg-main-mobile-img {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/* ***************COLUMNS ********************/
+.columns {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1059px;
+  height: 567px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  gap: 117px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ***************LEFT COLUMN *******************/
+.left-column {
+  display: flex;
+  flex-direction: column;
+  width: 541px;
+  height: 527px;
+  padding-left: 5px;
+  left: 174px;
+  top: 187px;
+  filter: drop-shadow(0px 39px 60px rgba(0, 0, 0, 0.142481));
+}
+
+.card-front {
+  width: 455px;
+  height: 253px;
+}
+
+.card-back {
+  width: 455px;
+  height: 253px;
+  place-self: flex-end;
+  margin-top: auto;
+}
+
+.img-card-front {
+  top: 50%;
+  left: 50%;
+  width: 447px;
+  height: 245px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 10px;
+  margin-bottom: 37px;
+}
+
+.img-card-back {
+  width: 447px;
+  height: 245px;
+  left: 268px;
+  top: 469px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  object-fit: cover;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+/* ***************RIGHT COLUMN *******************/
+
+.right-column {
+  width: 381px;
+  height: 352px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+/* FORM */
+.card-form {
+  width: 381px;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+/* Styles for all labels inside the form*/
+.card-form label {
+  color: var(--depp-violet);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+/* Styles for all inputs inside the form */
+.card-form input {
+  width: 381px;
+  height: 45px;
+  padding: 0.75rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  background: var(--white);
+  caret-color: var(--violet);
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+/* e.g. Jane Appleseed */
+.card-form input::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--depp-violet);
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.card-form input:focus {
+  outline: none;
+  border-color: var(--violet);
+}
+
+/* Container for -CARDHOLDER NAME- and -CARD NUMBER- */
+.form-control {
+  width: 381px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+/* Container for -EXP DATE- and -CVC- */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 9px;
+  width: 100%;
+}
+
+.exp-inputs {
+  display: flex;
+  gap: 9px;
+  width: 100%;
+}
+
+.exp-inputs input {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+}
+
+/* cvc input   */
+.cvc-input input {
+  width: 191px;
+}
+
+/* button */
+.btn-submit {
+  margin-top: 14px;
+  padding: 15px 0;
+  width: 381px;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: var(--btn-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  color: var(--btn-text-color);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background: var(--btn-hover-color);
+}
+
+/* Error Message */
+.error {
+  opacity: 0;
+  color: var(--error-color);
+  font-size: 12px;
+  margin-top: -8px;
+  transition: opacity 0.3s ease-in;
+}
+
+.error.visible {
+  opacity: 1;
+}
+
+input.invalid {
+  border-color: var(--error-color) !important;
+}

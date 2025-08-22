@@ -1,0 +1,430 @@
+/* =========================
+   iPad mini — PORTRAIT 768×1024
+========================= */
+@media (width: 768px) and (height: 1024px) and (orientation: portrait) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding-inline: 16px;
+  }
+
+  .bg-main-desktop {
+    display: block;
+  }
+
+  .bg-main-mobile {
+    display: none;
+  }
+
+  .columns {
+    width: 100%;
+    height: auto;
+    top: 52%;
+    gap: 40px;
+    padding-inline: 8px;
+  }
+
+  .left-column {
+    width: 420px;
+    height: auto;
+    padding-left: 0;
+  }
+
+  .card-front,
+  .img-card-front,
+  .card-back,
+  .img-card-back {
+    width: 320px;
+    height: 180px;
+  }
+
+  .right-column {
+    width: 340px;
+    height: auto;
+    padding: 0;
+  }
+
+  .card-form {
+    width: 340px;
+    height: auto;
+  }
+
+  .card-form input,
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* =========================
+   iPad mini — LANDSCAPE 1024×768
+========================= */
+@media (width: 1024px) and (height: 768px) and (orientation: landscape) {
+  .container {
+    width: min(100%, 980px);
+    height: auto;
+  }
+
+  .bg-main-desktop {
+    display: block;
+  }
+
+  .bg-main-mobile {
+    display: none;
+  }
+
+  .columns {
+    width: 100%;
+    height: auto;
+    top: 46%;
+    gap: 36px;
+  }
+
+  .left-column {
+    width: 460px;
+    height: auto;
+    padding-left: 0;
+  }
+
+  .card-front,
+  .img-card-front,
+  .card-back,
+  .img-card-back {
+    width: 360px;
+    height: 200px;
+  }
+
+  .right-column {
+    width: 340px;
+    height: auto;
+    padding: 0;
+  }
+
+  .card-form {
+    width: 340px;
+    height: auto;
+  }
+
+  .card-form input,
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* =========================
+   iPad Air — PORTRAIT 820×1180
+========================= */
+@media (width: 820px) and (height: 1180px) and (orientation: portrait) {
+  .container {
+    width: min(100%, 1100px);
+    height: auto;
+    padding-inline: 16px;
+  }
+
+  .bg-main-desktop {
+    display: block;
+  }
+
+  .bg-main-mobile {
+    display: none;
+  }
+
+  .columns {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    gap: 48px;
+  }
+
+  .left-column {
+    width: 460px;
+    height: auto;
+    padding-left: 0;
+  }
+
+  .card-front,
+  .img-card-front,
+  .card-back,
+  .img-card-back {
+    width: 360px;
+    height: 200px;
+  }
+
+  .right-column {
+    width: 360px;
+    height: auto;
+    padding: 0;
+  }
+
+  .card-form {
+    width: 360px;
+    height: auto;
+  }
+
+  .card-form input,
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* =========================
+   iPad Air — LANDSCAPE 1180×820
+   (на випадок повороту)
+========================= */
+@media (width: 1180px) and (height: 820px) and (orientation: landscape) {
+  .container {
+    width: min(100%, 1120px);
+    height: auto;
+  }
+
+  .columns {
+    width: 100%;
+    height: auto;
+    top: 46%;
+    gap: 48px;
+  }
+
+  .left-column {
+    width: 520px;
+  }
+
+  .card-front,
+  .img-card-front,
+  .card-back,
+  .img-card-back {
+    width: 400px;
+    height: 225px;
+  }
+
+  .right-column {
+    width: 360px;
+  }
+
+  .card-form {
+    width: 360px;
+  }
+
+  .card-form input,
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* =========================
+   iPad Pro 12.9" — PORTRAIT 1024×1366
+========================= */
+@media (width: 1024px) and (height: 1366px) and (orientation: portrait) {
+  .container {
+    width: min(100%, 1200px);
+    height: auto;
+    padding-inline: 20px;
+  }
+
+  .bg-main-desktop {
+    display: block;
+  }
+
+  .bg-main-mobile {
+    display: none;
+  }
+
+  .columns {
+    width: 100%;
+    height: auto;
+    top: 45%;
+    gap: 56px;
+  }
+
+  .left-column {
+    width: 560px;
+    height: auto;
+    padding-left: 0;
+  }
+
+  .card-front,
+  .img-card-front,
+  .card-back,
+  .img-card-back {
+    width: 420px;
+    height: 235px;
+  }
+
+  .right-column {
+    width: 381px;
+    height: auto;
+    padding: 0;
+  }
+
+  .card-form {
+    width: 381px;
+    height: auto;
+  }
+
+  .card-form input,
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* =========================
+   iPad Pro 12.9" — LANDSCAPE 1366×1024
+========================= */
+@media (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .container {
+    width: min(100%, 1280px);
+    height: auto;
+  }
+
+  .columns {
+    width: 100%;
+    height: auto;
+    top: 44%;
+    gap: 56px;
+  }
+
+  .left-column {
+    width: 600px;
+  }
+
+  .card-front,
+  .img-card-front,
+  .card-back,
+  .img-card-back {
+    width: 455px;
+    height: 253px;
+  }
+
+  .right-column {
+    width: 400px;
+  }
+
+  .card-form {
+    width: 400px;
+  }
+
+  .card-form input,
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* =========================
+   Phones — Base (<= 430px)
+   ========================= */
+@media (max-width: 430px) {
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-inline: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Show mobile background, hide desktop */
+  .bg-main-desktop,
+  .bg-main-desktop-img {
+    display: none;
+  }
+
+  .bg-main-mobile,
+  .bg-main-mobile-img {
+    display: flex;
+  }
+
+  .bg-main-mobile-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .columns {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    padding-inline: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-column {
+    height: auto;
+    padding-inline: 30px;
+    filter: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .right-column,
+  .card-form {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    padding-inline: 0;
+  }
+
+  /* Card sizes */
+  .card-front,
+  .img-card-front,
+  .card-back,
+  .img-card-back {
+    width: 180px;
+    height: 100px;
+  }
+
+  .card-front {
+    place-self: center;
+    margin: 20px 0 5px;
+  }
+
+  .card-back {
+    place-self: center;
+    margin-top: 0;
+  }
+
+  .card-form input,
+  .btn-submit {
+    width: 100%;
+  }
+}
+
+/* =========================
+   Phones — width-specific overrides
+   ========================= */
+
+/* 344px and 412–430px */
+@media (width: 344px),
+(min-width: 412px) and (max-width: 430px) {
+  .columns {
+    top: 38%;
+  }
+}
+
+/* 360px */
+@media (width: 360px) {
+  .columns {
+    top: 43%;
+    row-gap: 60px;
+  }
+}
+
+/* 375px */
+@media (width: 375px) {
+  .columns {
+    top: 47%;
+    row-gap: 40px;
+  }
+}
+
+/* 390px */
+@media (width: 390px) {
+  .columns {
+    top: 37%;
+    row-gap: 60px;
+  }
+}
